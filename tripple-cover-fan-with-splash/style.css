@@ -1,0 +1,84 @@
+#container{
+  background: #eee;
+  width: 240px;
+  height: 240px;
+  overflow: none;
+  position:relative;
+  z-index:-110;
+  overflow: hidden;
+}
+#container .product-image {
+  width:120px;
+  height:120px;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+
+#container .product-image.first {
+  background:url(image1.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  z-index: -100;
+  position:absolute;
+  left:0;
+  top:15px;
+  overflow:hidden;
+}
+#container .product-image.second {
+  background:url(image2.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  z-index: -90;
+  position:absolute;
+  right:0;
+  top:35px;
+}
+#container .product-image.third {
+  background:url(image3.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  -ms-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+  z-index: -80;
+  position:absolute;
+  left:50px;
+  bottom:15px;
+}
+
+.price-splash {
+    background-image: url(sprite.png);
+    background-position: 0 -446px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    position: absolute;;
+    bottom:5px;
+    left:5px;
+}
+.caption {
+  font-family: "myriad pro";
+  font-size: 10px;
+  position: absolute;
+  top:5px;
+  left:24px;
+}
+.price {
+  font-family: "myriad pro";
+  font-weight: bold;
+  font-size: 24px;
+  position: absolute;
+  top:16px;
+  left:11px;
+}
