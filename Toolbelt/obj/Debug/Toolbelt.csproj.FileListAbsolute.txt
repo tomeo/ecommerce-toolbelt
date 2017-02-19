@@ -1,0 +1,13 @@
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\bin\Debug\Toolbelt.exe.config
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\bin\Debug\Toolbelt.exe
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\bin\Debug\Toolbelt.pdb
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\Toolbelt.csprojResolveAssemblyReference.cache
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\MainWindow.g.cs
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\App.g.cs
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\Toolbelt_MarkupCompile.cache
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\MainWindow.baml
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\Toolbelt.g.resources
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\Toolbelt.Properties.Resources.resources
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\Toolbelt.csproj.GenerateResource.Cache
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\Toolbelt.exe
+c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\Toolbelt.pdb
