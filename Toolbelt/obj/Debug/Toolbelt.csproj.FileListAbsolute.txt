@@ -11,3 +11,16 @@ c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug
 c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\Toolbelt.csproj.GenerateResource.Cache
 c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\Toolbelt.exe
 c:\users\tommy\documents\visual studio 2015\Projects\Toolbelt\Toolbelt\obj\Debug\Toolbelt.pdb
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\bin\Debug\Toolbelt.exe.config
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.exe
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.pdb
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\bin\Debug\Toolbelt.exe
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\bin\Debug\Toolbelt.pdb
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.csprojResolveAssemblyReference.cache
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\MainWindow.baml
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\MainWindow.g.cs
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\App.g.cs
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt_MarkupCompile.cache
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.g.resources
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.Properties.Resources.resources
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.csproj.GenerateResource.Cache

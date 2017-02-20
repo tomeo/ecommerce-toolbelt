@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -73,18 +74,34 @@ namespace Toolbelt
                     return;
                 }
 
+                var total = eans.Count;
                 var dict = productIds.Zip(eans, (k, v) => new {k, v}).ToDictionary(x => x.k, x => x.v);
-
                 var baseUrl = @"http://media2.jpc.de/image/w600/front/0/";
+
+                var found = new List<string>();
+                var notFound = new List<string>();
                 using (var client = new WebClient())
                 {
                     foreach (var kvp in dict)
                     {
-                        var url = $"{baseUrl}{kvp.Value}.jpg";
-                        var dl = Path.Combine(path, $"{kvp.Key}.jpg");
-                        client.DownloadFile(url, dl);
+                        try
+                        {
+                            var url = $"{baseUrl}{kvp.Value}.jpg";
+                            var dl = Path.Combine(path, $"{kvp.Key}.jpg");
+                            client.DownloadFile(url, dl);
+                            found.Add(kvp.Value);
+                        }
+                        catch (Exception)
+                        {
+                            notFound.Add(kvp.Value);
+                        }
                     }
                 }
+                MessageBox.Show(
+                        $"Found {found.Count}/{total}. Missed {notFound.Count}/{total}: {string.Join(", ", notFound)}",
+                        "Done",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
