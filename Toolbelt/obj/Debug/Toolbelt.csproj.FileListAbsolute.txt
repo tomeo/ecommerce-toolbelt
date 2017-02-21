@@ -24,3 +24,8 @@ C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt_MarkupCompile
 C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.g.resources
 C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.Properties.Resources.resources
 C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.csproj.GenerateResource.Cache
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\UserControls\CoverImageDownloader.baml
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\UserControls\CoverImageDownloader.g.cs
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt_MarkupCompile.lref
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\App.baml
+C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\GeneratedInternalTypeHelper.g.cs
