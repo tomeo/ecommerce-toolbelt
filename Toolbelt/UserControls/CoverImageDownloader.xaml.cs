@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -24,6 +23,7 @@ namespace Toolbelt.UserControls
 
         private void Run(object sender, RoutedEventArgs e)
         {
+            TxtLog.Text = string.Empty;
             var worker = new BackgroundWorker
             {
                 WorkerReportsProgress = true
@@ -70,24 +70,50 @@ namespace Toolbelt.UserControls
                     .ToList()
             };
 
+            if (string.IsNullOrWhiteSpace(arguments.Path))
+            {
+                MessageBox.Show(
+                    "No output directory set",
+                    "Error",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+                return;
+            }
+
+            Directory.CreateDirectory(arguments.Path);
+
+            if (!arguments.ProductIds.Any())
+            {
+                MessageBox.Show(
+                    "No product ids",
+                    "Error",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+                return;
+            }
+
+            if (!arguments.Eans.Any())
+            {
+                MessageBox.Show(
+                    "No EANs",
+                    "Error",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+                return;
+            }
+
+            if (arguments.ProductIds.Count != arguments.Eans.Count)
+            {
+                MessageBox.Show(
+                    "Uneven number of productIds and EANs",
+                    "Error",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+                return;
+            }
+
             ProgressContainer.Visibility = Visibility.Visible;
             worker.RunWorkerAsync(arguments);
-
-            //if (string.IsNullOrWhiteSpace(path))
-            //{
-            //    MessageBox.Show(
-            //        "Your have to select a folder.",
-            //        "Toolbelt",
-            //        MessageBoxButton.OK,
-            //        MessageBoxImage.Error);
-            //}
-            //else
-            //{
-            //    //BtnGetImages.IsEnabled = false;
-            //    //BtnExportFileBrowse.IsEnabled = false;
-            //    //
-                
-            //}
         }
 
         private void export_DoWork(object sender, DoWorkEventArgs e)
@@ -110,48 +136,6 @@ namespace Toolbelt.UserControls
         {
             try
             {
-                //if (string.IsNullOrWhiteSpace(path))
-                //{
-                //    MessageBox.Show(
-                //        "No output directory set",
-                //        "Error",
-                //        MessageBoxButton.OK,
-                //        MessageBoxImage.Error);
-                //    return;
-                //}
-
-                Directory.CreateDirectory(arguments.Path);
-
-                //if (!productIds.Any())
-                //{
-                //    MessageBox.Show(
-                //        "No product ids",
-                //        "Error",
-                //        MessageBoxButton.OK,
-                //        MessageBoxImage.Error);
-                //    return;
-                //}
-
-                //if (!eans.Any())
-                //{
-                //    MessageBox.Show(
-                //        "No EANs",
-                //        "Error",
-                //        MessageBoxButton.OK,
-                //        MessageBoxImage.Error);
-                //    return;
-                //}
-
-                //if (productIds.Count != eans.Count)
-                //{
-                //    MessageBox.Show(
-                //        "Uneven number of productIds and EANs",
-                //        "Error",
-                //        MessageBoxButton.OK,
-                //        MessageBoxImage.Error);
-                //    return;
-                //}
-
                 var total = arguments.Eans.Count;
                 var dict = arguments.ProductIds.Zip(arguments.Eans, (k, v) => new { k, v }).ToDictionary(x => x.k, x => x.v);
                 var baseUrl = @"http://media2.jpc.de/image/w600/front/0/";
