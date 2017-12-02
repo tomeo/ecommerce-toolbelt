@@ -12,7 +12,7 @@
             <Button Name="BtnGetImages" Click="Run" Margin="10,0,0,0" Padding="10">Run</Button>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 10, 0, 0" DockPanel.Dock="Top">
-            <TextBox Name="TxtProductIds" Margin="0,0,10,0"  TextWrapping="Wrap" AcceptsReturn="True" VerticalAlignment="Stretch" Width="200" Height="400" Padding="10" Text="39639688"/>
+            <TextBox Name="TxtProductIds" Margin="0,0,10,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalAlignment="Stretch" Width="200" Height="400" Padding="10" Text="39639688"/>
             <TextBox Name="TxtEans" TextWrapping="Wrap" AcceptsReturn="True" VerticalAlignment="Stretch" Width="200" Height="400" Padding="10" Text="98787117219"/>
         </StackPanel>
         <StackPanel Margin="0, 10, 0, 0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Top">

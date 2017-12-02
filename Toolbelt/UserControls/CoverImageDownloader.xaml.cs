@@ -5,9 +5,11 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Media.Imaging;
 using MessageBox = System.Windows.MessageBox;
+using TextBox = System.Windows.Controls.TextBox;
 
 namespace Toolbelt.UserControls
 {
@@ -190,6 +192,14 @@ namespace Toolbelt.UserControls
             var fbd = new FolderBrowserDialog();
             fbd.ShowDialog();
             TxtExportFileBrowse.Text = fbd.SelectedPath;
+        }
+
+        private void CleanTextBox(object sender, TextChangedEventArgs e)
+        {
+            var text = ((TextBox)sender).Text;
+            text = string.Join(Environment.NewLine,
+                text.Split(new[] {Environment.NewLine}, StringSplitOptions.None)
+                    .Where(s => !string.IsNullOrWhiteSpace(s)));
         }
     }
 }
