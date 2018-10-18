@@ -157,7 +157,11 @@ namespace Toolbelt.UserControls
                             var dl = Path.Combine(arguments.Path, $"{kvp.Key}.jpg");
                             client.DownloadFile(url, dl);
                             found.Add(kvp.Value);
-                            OnProgressUpdate?.Invoke(new ProgressEventArg(Convert.ToInt32(p), null, $"Found {kvp.Value}", dl));
+                            // Minimize filips disk usage because he has a CDON laptop
+                            if (i % 5 == 0)
+                            {
+                                OnProgressUpdate?.Invoke(new ProgressEventArg(Convert.ToInt32(p), null, $"Found {kvp.Value}", dl));
+                            }
                         }
                         catch (Exception)
                         {

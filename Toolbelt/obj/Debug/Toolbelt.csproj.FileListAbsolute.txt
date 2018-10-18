@@ -16,7 +16,6 @@ C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.exe
 C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.pdb
 C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\bin\Debug\Toolbelt.exe
 C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\bin\Debug\Toolbelt.pdb
-C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.csprojResolveAssemblyReference.cache
 C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\MainWindow.baml
 C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\MainWindow.g.cs
 C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\App.g.cs
@@ -29,3 +28,4 @@ C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\UserControls\CoverImag
 C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt_MarkupCompile.lref
 C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\App.baml
 C:\Users\tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Tommy\code\ecommerce-toolbelt\Toolbelt\obj\Debug\Toolbelt.csproj.CoreCompileInputs.cache
